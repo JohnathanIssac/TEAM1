@@ -1,0 +1,97 @@
+
+.mobileNavIcon {
+  display: none;
+}
+
+.navUl{
+  z-index: 6000;
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  backdrop-filter: blur(5px);
+  padding: 0px;
+  display: flex;
+  gap: var(--gap, 5rem);
+  width: 100%;
+  justify-content: center;
+} 
+
+.navUl a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.navUl a>li {
+  text-align: center;
+}
+
+.navUl a> [aria-hidden="true"] {
+  margin-inline-end: 0.5em;
+}
+
+/* @media (max-width: 40em) {
+  .navUl {
+    --gap: 2em;
+
+    position: fixed;
+    inset: 0 0 0 30%;
+
+    flex-direction: column;
+    padding: min(30vh,10rem) 2em;
+
+    background: hsl(0 0% 0% / 0.75);
+    transform: translateX(100%);
+  }
+
+  .navUl[data-visible="true"] {
+    transform: translateX(0%);
+  } */
+
+  /* @supports (backdrop-filter: blur(1rem)) {
+    .navUl {
+      background: hsl(0 0% 100% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  .mobileNavIcon {
+    display: block;
+    position: absolute;
+    z-index: 7000;
+    background-color: lightblue;
+    background: url("./menu.svg");
+    background-repeat: no-repeat;
+    background-size: 27px;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    background-color: lightblue;
+  }
+
+  .mobileNavIcon[aria-expanded="true"] {
+    background-image: url("./x-lg.svg");
+  }
+
+  .seperatingDiv {
+    margin: 50px;
+  } */
+/* } */
+
+.Search {
+  background-color: white;
+  height: 100vh;
+  width: 100vw; 
+}
+
+.SearchBar {
+  padding-top: 20vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
