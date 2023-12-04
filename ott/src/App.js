@@ -10,13 +10,15 @@ import Series from './pages/Series';
 import Entertainment from './pages/Entertainment';
 import Login from './pages/Login';
 import IntroPage from './pages/IntroPage';
+import Register from './pages/Register';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
         <Routes>
-          <Route path="/" element={<IntroPage />} />
+          <Route path='/' element={<IntroPage />} />
+          <Route path='/Register' element={<Register />}/>
           <Route path='/Home' element={<Home />}/>
           <Route path='/Login' element={<Login />}/>
           <Route path='/Info' element={<UserInfoPage />}/>
