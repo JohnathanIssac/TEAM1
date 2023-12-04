@@ -1,22 +1,35 @@
 import React from 'react';
-import Nav from '../Nav';
+import '../App.css';
 
-function login() {
-
+function Login() {
     const movingPage = () => {
-        window.location.href("/Home");
+        window.location.href = "/Home";
     }
-    return (
-        <div>
-            <Nav />
-            <div className="Home">
-        <h1>Welcome to OTT-service Platform</h1>
-        <p>This is the home page content.</p>
-        <button type="submit" onClick={movingPage}>Login</button>
-        </div>
+    return(
+        <div className="Login">
+            <form id="formmat" method="post">
+                <div className="imgcontainer">
+                    <h1>Login</h1>
+                </div>
+                <div className="con">
+                    <label for="uname"><b>ID</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required/>
+                        
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                    <button className="loginButton" type="submit" onClick={movingPage}><b>Login</b></button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"/><small>remember my information</small>
+                    </label>
+                </div>
+                <div className="container" style={{backgroundColor: '#f1f1f1'}}>
+                    <button type="button" className="cancelbtn">Cancel</button>
+                    <span className="psw"><a className="fp" href="#">do you forget your password?</a></span>
+                </div>
+            </form>
         </div>
     );
     }
 
-export default login;
-background: url('./assets/background_login.avif');
+export default Login;

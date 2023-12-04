@@ -8,13 +8,17 @@ import Movies from './pages/Movies';
 import SavingContent from './pages/SavingContent';
 import Series from './pages/Series';
 import Entertainment from './pages/Entertainment';
+import Login from './pages/Login';
+import IntroPage from './pages/IntroPage';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
         <Routes>
-          <Route path='/' element={<Home />}/>
+          <Route path="/" element={<IntroPage />} />
+          <Route path='/Home' element={<Home />}/>
+          <Route path='/Login' element={<Login />}/>
           <Route path='/Info' element={<UserInfoPage />}/>
           <Route path='/Documentary' element={<Documentary />}/>
           <Route path='/Movies' element={<Movies/>}/>

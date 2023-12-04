@@ -7,7 +7,6 @@ import infoIcon from './assets/mypageicon.png';
 import './Nav.css';
 
 function Nav() {
-
     return (
         <div className="Nav">
             <nav class="navbar navbar-light bg-dark">

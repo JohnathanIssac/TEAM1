@@ -5,13 +5,12 @@ import search from '../assets/search.png';
 function Search({ onClick, onChange }) {
   return (
     <div className="Search" style={{backgroundColor: "black"}}>
-        <Nav/>
+        <Nav />
             <div className="SearchTitle">
                 <p>What do you want to find?</p>
             </div>
                 <div className="input-group">  
-                <input type="text" 
-                maxlength="30" 
+                <input type="text"
                 placeholder="Search Titles of Movies, Sports, etc.," 
                 />
                     <button type="button" id="search_btn" onClick={onClick}>
