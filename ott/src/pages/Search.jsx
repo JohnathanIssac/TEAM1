@@ -1,20 +1,25 @@
 import React from "react";
-import Nav from "../Nav";
-import '../App.css';
+import Nav from '../Nav';
+import search from '../assets/search.png';
 
-function Search() {
-
-    return (
-        <div className="Search">
-            <Nav />
-                <div class="input-group flex-nowrap">
-                    <form>
-                    <button>Search</button>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
-                    </form>
+function Search({ onClick, onChange }) {
+  return (
+    <div className="Search" style={{backgroundColor: "black"}}>
+        <Nav/>
+            <div className="SearchTitle">
+                <p>What do you want to find?</p>
+            </div>
+                <div className="input-group">  
+                <input type="text" 
+                maxlength="30" 
+                placeholder="Search Titles of Movies, Sports, etc.," 
+                />
+                    <button type="button" id="search_btn" onClick={onClick}>
+                        <img src={search} width="30" height="30" ></img>
+                    </button>
                 </div>
-        </div>
-    );
+            </div>
+        );
 }
 
 export default Search;
