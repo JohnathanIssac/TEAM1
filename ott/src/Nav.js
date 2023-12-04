@@ -10,7 +10,7 @@ function Nav() {
     return (
         <div className="Nav">
             <nav class="navbar navbar-light bg-dark">
-                <Link className="navbar-brand" to={'/'}>
+                <Link className="navbar-brand" to={'/Home'}>
                 <img src={homeIcon} className="iconPosition" width="30" height="30"></img></Link>
                 <ul className="nav justify-content-right">
                     <li className="nav-item dropdown">

@@ -78,16 +78,11 @@
 }
 
 .loginBox {
-  background-color: rgba(105, 105, 105, 0.8); /* darkgrey */
+  background-color: rgba(105, 105, 105, 0.8);
   padding: 30px;
   border-radius: 8px;
   text-align: center;
   color: white;
-  width: 500px;
-}
-
-.loginBox h2 {
-  margin-bottom: 20px;
 }
 
 .formGroup {

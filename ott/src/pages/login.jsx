@@ -8,19 +8,23 @@ function Login() {
     }
 
     return (
-      <div className="Login">
+        <div className="Login">
         <div className="loginBox">
-          <h2>Login</h2>
+          <h2 style={{marginBottom: "20px"}}>Login</h2>
           <form>
             <div className="formGroup">
-              <label htmlFor="userId">ID:</label>
-              <input type="text" id="userId" name="userId" />
+              <label htmlFor="username">ID:</label>
+              <input type="text" id="username" name="username" />
             </div>
             <div className="formGroup">
               <label htmlFor="password">Password:</label>
-              <input type="text" id="password" name="password" />
+              <input type="password" id="password" name="password" />
             </div>
-            <button type="submit" className="login-btn" onClick={moveTo}>Login</button>
+            <div className="formGroup">
+              <input type="checkbox" id="remember" name="remember" />
+              <label htmlFor="remember">Remember me</label>
+            </div>
+            <button type="button" className="login-btn" onClick={moveTo}>Login</button>
           </form>
         </div>
       </div>
