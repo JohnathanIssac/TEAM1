@@ -20,7 +20,6 @@ function Nav() {
                                 <li><Link className="dropdown-item" to={"/Movies"}>Movies</Link></li>
                                 <li><Link className="dropdown-item" to={"/Documentary"}>Documetary</Link></li>
                                 <li><Link className="dropdown-item" to={"/Entertainment"}>Entertainment</Link></li>
-                                <li><Link className="dropdown-item" to={"SavingContents"}>Saving contents</Link></li>
                             </ul>
                         </li>
                     <li className="nav-item">

@@ -5,7 +5,6 @@ import UserInfoPage from './pages/Info';
 import Home from './pages/Home';
 import Documentary from './pages/Documentary';
 import Movies from './pages/Movies';
-import SavingContent from './pages/SavingContent';
 import Series from './pages/Series';
 import Entertainment from './pages/Entertainment';
 import Login from './pages/Login';
@@ -24,7 +23,6 @@ function App() {
           <Route path='/Info' element={<UserInfoPage />}/>
           <Route path='/Documentary' element={<Documentary />}/>
           <Route path='/Movies' element={<Movies/>}/>
-          <Route path='/SavingContent' element={<SavingContent />}/>
           <Route path='/Series' element={<Series />}/>
           <Route path='/Entertainment' element={<Entertainment />}/>
           <Route path='/Search' element={<Search />}/>

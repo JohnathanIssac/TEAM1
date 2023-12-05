@@ -163,6 +163,22 @@
   color: rgb(209, 209, 209);
 }
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.image-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
 /* search page CSS */
 .Search {
   background: linear-gradient(to bottom, darkgrey);

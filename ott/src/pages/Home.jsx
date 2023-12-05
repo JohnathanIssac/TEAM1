@@ -15,25 +15,27 @@ function Home() {
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src={Poster} class="d-block w-100" alt="..."/>
+              <div className="image-wrapper">
+              <img src={Poster} class="d-block w-100 img-fluid" alt="..." style={{objectFit: "cover", height: '400px'}}/>
+              </div>
             <div class="carousel-caption d-none d-md-block">
-            <button className="btn btn-secondary" style={{marginBottom: "10px"}}>시청하기</button>
+            <button className="btn btn-secondary" style={{marginBottom: "10px"}}>Watch this right now!</button>
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src={Poster} class="d-block w-100" alt="..."/>
+            <img src={Poster} class="d-block w-100" alt="..." style={{objectFit: "cover", height: '400px'}}/>
           <div class="carousel-caption d-none d-md-block">
-          <button className="btn btn-secondary" style={{marginBottom: "10px"}}>시청하기</button>
+          <button className="btn btn-secondary" style={{marginBottom: "10px"}}>Watch this right now!</button>
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src={Poster2} class="d-block w-100" alt="..."/>
+          <img src={Poster2} class="d-block w-100" alt="..." style={{objectFit: "cover", height: '400px'}}/>
         <div class="carousel-caption d-none d-md-block">
-        <button className="btn btn-secondary" style={{marginBottom: "10px"}}>시청하기</button>
+        <button className="btn btn-secondary" style={{marginBottom: "10px"}}>Watch this right now!</button>
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
@@ -48,6 +50,17 @@ function Home() {
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </div>
+  <div className="videoList">
+    <div className="MovieList">
+
+    </div>
+    <div className="Animation">
+
+    </div>
+    <div className="Documentary">
+
+    </div>
   </div>
     </div>
   );
