@@ -1,4 +1,6 @@
-
+body {
+  background-color: black;
+}
 .mobileNavIcon {
   display: none;
 }
@@ -159,7 +161,6 @@
 
 /*Home page CSS*/
 .Home {
-  background-color: rgb(64, 64, 64);
   color: rgb(209, 209, 209);
 }
 
@@ -177,6 +178,26 @@
   object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.videoList{
+  margin: 10px;
+  background-color: black;
+}
+
+.swiperCSS {
+  text-align: center;
+  padding: 10px;
+}
+
+.swiperCSS img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
 }
 
 /* search page CSS */
