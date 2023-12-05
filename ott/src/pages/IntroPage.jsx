@@ -12,7 +12,7 @@ function IntroPage() {
   }
 
   return (
-    <div className="intro-container">
+    <div className="IntroPage">
       <div className="login-button">
         <button className="btn btn-primary" style={{marginRight: '10px'}} onClick={moveTo}>Log in</button>
         <button className="btn btn-secondary" onClick={signUpButton}>Sign up</button>

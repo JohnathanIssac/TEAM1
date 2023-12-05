@@ -32,7 +32,7 @@
 }
 
 /*Intro page part*/
-.intro-container {
+.IntroPage {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/IntroBack.png');
   height: 100vh;
   display: flex;
