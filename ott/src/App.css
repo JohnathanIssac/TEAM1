@@ -203,10 +203,10 @@ body {
 /* search page CSS */
 .Search {
   background: linear-gradient(to bottom, white);
-  background-image: './assets/SearchMain.jpg';
 }
 
 .input-group {
+  background-image: './assets/SearchMain.jpg';
   height: 100vh;
   display: flex;
   justify-content: center;
