@@ -202,7 +202,8 @@ body {
 
 /* search page CSS */
 .Search {
-  background: linear-gradient(to bottom, darkgrey);
+  background: linear-gradient(to bottom, white);
+  background-image: './assets/SearchMain.jpg';
 }
 
 .input-group {
@@ -210,25 +211,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  width: 60%;
-  margin-top: 20px;
-  margin-left: 20%;
+  height: 20vh;
+  z-index: 3;
 }
 
-.form-control {
-  width: 100%; 
-}
-.input-group #search_btn {
-  background-color: transparent;
-}
-
-.SearchTitle {
-  color: white;
-  display: flex;
-  justify-content: center;
+.SearchForm {
+  margin-top: 50px;
+  width: 50%; 
+  height: 50%;
+  border-radius: 40px;
+  border-color: white;
   font-size: 20px;
+  color: white;
+  background-color: black;
 }
+
+.SearchForm::placeholder {
+  color: grey;
+}
+
 
 /* @media (max-width: 40em) {
   .navUl {
